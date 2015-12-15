@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Login"
+    android:background="@drawable/beer">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:id="@+id/FirstName"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstNameInput"
+        android:layout_alignTop="@+id/FirstName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="91dp"
+        android:layout_marginEnd="91dp"
+        android:layout_toRightOf="@+id/FirstName"
+        android:layout_toEndOf="@+id/FirstName"
+        android:inputType="textPersonName"
+        android:text="@string/first_name_input" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:id="@+id/lastName"
+        android:textSize="20sp"
+        android:layout_below="@+id/firstNameInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailInput"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/lastNameInput"
+        android:layout_toRightOf="@+id/emailField"
+        android:layout_toEndOf="@+id/emailField"
+        android:text="@string/email_field_input" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastNameInput"
+        android:layout_alignTop="@+id/lastName"
+        android:layout_toRightOf="@+id/lastName"
+        android:layout_alignRight="@+id/firstNameInput"
+        android:layout_alignEnd="@+id/firstNameInput"
+        android:inputType="textPersonName"
+        android:text="@string/last_name_input" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/emailField"
+        android:layout_alignBottom="@+id/emailInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:id="@+id/userName"
+        android:layout_below="@+id/emailInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp"
+        android:password="false"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameInput"
+        android:layout_alignBottom="@+id/userName"
+        android:layout_alignRight="@+id/emailInput"
+        android:layout_alignEnd="@+id/emailInput"
+        android:layout_alignLeft="@+id/lastNameInput"
+        android:layout_alignStart="@+id/lastNameInput"
+        android:text="@string/user_name_input"
+        android:inputType="none" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/PasswordInput"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/userNameInput"
+        android:layout_alignLeft="@+id/userNameInput"
+        android:layout_alignStart="@+id/userNameInput"
+        android:password="true"
+        android:text="@string/password_input" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_field"
+        android:id="@+id/Password"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/PasswordInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/PasswordInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/RadioGroup"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/firstNameInput"
+        android:layout_toStartOf="@+id/firstNameInput">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:id="@+id/maleButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:id="@+id/femaleButton" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:id="@+id/Submit"
+        android:enabled="true"
+        android:layout_alignTop="@+id/RadioGroup"
+        android:layout_alignLeft="@+id/PasswordInput"
+        android:layout_alignStart="@+id/PasswordInput" />
+
+</RelativeLayout>

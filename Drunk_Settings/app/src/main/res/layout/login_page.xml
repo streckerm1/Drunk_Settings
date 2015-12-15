@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffa30">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name_login"
+        android:id="@+id/UserNameLogin"
+        android:textSize="20sp"
+        android:layout_marginTop="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_login"
+        android:id="@+id/PasswordLogin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_login"
+        android:id="@+id/LoginButton"
+        android:layout_below="@+id/PasswordLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginUser"
+        android:layout_alignTop="@+id/UserNameLogin"
+        android:layout_toRightOf="@+id/UserNameLogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="textPersonName"
+        android:text="@string/user_name_input" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/LoginUser"
+        android:layout_alignStart="@+id/LoginUser"
+        android:layout_alignRight="@+id/LoginUser"
+        android:layout_alignEnd="@+id/LoginUser"
+        android:inputType="textPassword"
+        android:text="@string/password_input"
+        android:password="true" />
+
+</RelativeLayout>

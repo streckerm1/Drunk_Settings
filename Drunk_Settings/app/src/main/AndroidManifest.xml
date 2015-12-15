@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.streckerm1.final_project_drunk" >
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <uses-feature android:name="android.hardware.telephony" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SignUp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login"
+            android:label="Login">
+        </activity>
+
+        <activity android:name=".FirstPage"
+            android:label="FirstPage">
+
+        </activity>
+
+        <activity android:name=".MinDrinks"
+            android:label="MinDrinks"></activity>
+
+        <activity android:name=".MedDrinks"
+            android:label="MedDrinks"></activity>
+
+        <activity android:name=".LargeDrinks"
+            android:label="LargeDrinks">
+        </activity>
+
+        <activity android:name=".ExtraDrinks"
+            android:label="ExtraDrinks">
+        </activity>
+
+        <activity android:name=".MaxDrinks"
+            android:label="MaxDrinks"></activity>
+
+        <activity android:name=".Landing_Page"
+            android:label="Landing_Page"></activity>
+        <activity android:name=".DrunkLog"
+            android:label="DrunkLog"></activity>
+
+        <activity android:name=".populateForm"
+            android:label="populateForm">
+        </activity>
+
+    </application>
+
+</manifest>

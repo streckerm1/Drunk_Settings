@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/solve_math"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="87dp"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/math_problem_string"
+        android:id="@+id/equation_test"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unlock_answer"
+        android:layout_below="@+id/equation_test"
+        android:layout_marginTop="93dp"
+        android:layout_alignLeft="@+id/equation_test"
+        android:layout_alignStart="@+id/equation_test"
+        android:layout_alignRight="@+id/equation_test"
+        android:layout_alignEnd="@+id/equation_test"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_unlock_attempt"
+        android:id="@+id/unlock_submit"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/unlock_answer"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
